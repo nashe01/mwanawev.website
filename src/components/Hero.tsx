@@ -4,7 +4,7 @@ import heroBgVideo from "@/assets/hero-bg.mp4";
 
 export const Hero = () => {
   return (
-    <section id="hero" className="relative h-screen flex items-center justify-center">
+    <section id="hero" className="relative h-screen flex items-center justify-start">
       {/* Background Video with Overlay */}
       <div className="absolute inset-0 overflow-hidden">
         <video
@@ -20,16 +20,16 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-left">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
           Conservation Through
           <br />
           <span className="text-accent">Innovation & Technology</span>
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+        <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-3xl">
           MwanaWev delivers cutting-edge conservation solutions, bridging technology and nature for sustainable impact across Africa.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-start items-center">
           <Button
             size="lg"
             className="bg-accent hover:bg-accent/90 text-white px-8 py-6 text-lg"
