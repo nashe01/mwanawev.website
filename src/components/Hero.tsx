@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import heroBgVideo from "@/assets/hero-bg.mp4";
 
 export const Hero = () => {
@@ -9,7 +9,7 @@ export const Hero = () => {
       className="relative mt-16 min-h-[calc(100vh-4rem)] flex items-center justify-start"
     >
       {/* Background Video with Overlay */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden hero-clip">
         <video
           className="h-full w-full object-cover"
           autoPlay
@@ -31,21 +31,43 @@ export const Hero = () => {
         <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 max-w-2xl">
           MwanaWev delivers cutting-edge conservation solutions, bridging technology and nature for sustainable impact across Africa.
         </p>
-        <div className="flex flex-col sm:flex-row gap-3 justify-start items-center">
-          <Button
-            size="sm"
-            className="bg-accent hover:bg-accent/90 text-white px-6 py-4 text-base"
+        <div className="flex gap-4 justify-start items-center">
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
           >
-            Explore Our Work
-            <ArrowRight className="ml-2" size={20} />
-          </Button>
-          <Button
-            size="sm"
-            variant="outline"
-            className="border-white text-white hover:bg-white hover:text-primary px-6 py-4 text-base"
+            <Twitter size={20} />
+          </a>
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
           >
-            Learn More
-          </Button>
+            <Instagram size={20} />
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
+          >
+            <Linkedin size={20} />
+          </a>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
+          >
+            <Youtube size={20} />
+          </a>
         </div>
       </div>
 
