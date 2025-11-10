@@ -4,7 +4,10 @@ import heroBgVideo from "@/assets/hero-bg.mp4";
 
 export const Hero = () => {
   return (
-    <section id="hero" className="relative h-screen pt-16 flex items-center justify-start">
+    <section
+      id="hero"
+      className="relative mt-16 min-h-[calc(100vh-4rem)] flex items-center justify-start"
+    >
       {/* Background Video with Overlay */}
       <div className="absolute inset-0 overflow-hidden">
         <video
