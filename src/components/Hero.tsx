@@ -1,6 +1,9 @@
 import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import heroBgVideo from "@/assets/hero-bg.mp4";
+import clip1 from "@/assets/clip1.png";
+import clip2 from "@/assets/clip2.png";
+import clip3 from "@/assets/clip3.png";
 
 export const Hero = () => {
   return (
@@ -74,18 +77,22 @@ export const Hero = () => {
       {/* Bottom-left overlay cards on clipped area */}
       <div className="absolute z-10 bottom-6 left-6 grid grid-cols-4 gap-4">
         <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg">
+          <img src={clip1} alt="Impact" className="w-8 h-8 mb-2 object-contain" />
           <div className="text-sm font-bold text-primary">Impact</div>
           <div className="text-xs text-slate-600">Real-time monitoring</div>
         </Card>
         <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg">
+          <img src={clip2} alt="Tech" className="w-8 h-8 mb-2 object-contain" />
           <div className="text-sm font-bold text-primary">Tech</div>
           <div className="text-xs text-slate-600">AI-driven insights</div>
         </Card>
         <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg">
+          <img src={clip3} alt="Community" className="w-8 h-8 mb-2 object-contain" />
           <div className="text-sm font-bold text-primary">Community</div>
           <div className="text-xs text-slate-600">Local engagement</div>
         </Card>
         <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg">
+          <img src={clip1} alt="Education" className="w-8 h-8 mb-2 object-contain" />
           <div className="text-sm font-bold text-primary">Education</div>
           <div className="text-xs text-slate-600">Training programs</div>
         </Card>
