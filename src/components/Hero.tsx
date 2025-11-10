@@ -10,9 +10,9 @@ export const Hero = () => {
         <video
           className="h-full w-full object-cover"
           autoPlay
-          loop
           muted
           playsInline
+          onEnded={(event) => event.currentTarget.pause()}
         >
           <source src={heroBgVideo} type="video/mp4" />
         </video>
