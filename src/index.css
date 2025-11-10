@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("./assets/fonts/stylesheet.css");
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
@@ -126,5 +128,12 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+		font-family: 'Alro', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		font-weight: 400;
   }
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Alro', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		font-weight: 700;
+	}
 }
