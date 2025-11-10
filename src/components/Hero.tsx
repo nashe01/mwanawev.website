@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Card } from "@/components/ui/card";
 import heroBgVideo from "@/assets/hero-bg.mp4";
 
 export const Hero = () => {
@@ -69,6 +69,26 @@ export const Hero = () => {
             <Youtube size={20} />
           </a>
         </div>
+      </div>
+
+      {/* Bottom-left overlay cards on clipped area */}
+      <div className="absolute z-10 bottom-6 left-6 grid grid-cols-2 gap-4 max-w-md">
+        <Card className="bg-white/90 backdrop-blur-sm border-white/30 p-4">
+          <div className="text-sm font-bold text-primary">Impact</div>
+          <div className="text-xs text-slate-600">Real-time monitoring</div>
+        </Card>
+        <Card className="bg-white/90 backdrop-blur-sm border-white/30 p-4">
+          <div className="text-sm font-bold text-primary">Tech</div>
+          <div className="text-xs text-slate-600">AI-driven insights</div>
+        </Card>
+        <Card className="bg-white/90 backdrop-blur-sm border-white/30 p-4">
+          <div className="text-sm font-bold text-primary">Community</div>
+          <div className="text-xs text-slate-600">Local engagement</div>
+        </Card>
+        <Card className="bg-white/90 backdrop-blur-sm border-white/30 p-4">
+          <div className="text-sm font-bold text-primary">Education</div>
+          <div className="text-xs text-slate-600">Training programs</div>
+        </Card>
       </div>
 
       {/* Scroll Indicator */}
