@@ -137,3 +137,25 @@ All colors MUST be HSL.
 		font-weight: 700;
 	}
 }
+
+/* Hero angled bottom using clip-path */
+.hero-clip {
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% 100%,
+		50% 100%,
+		40% 80%,
+		0 %
+	);
+}
+
+/* Full-bleed hero background helper */
+.hero-full {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
