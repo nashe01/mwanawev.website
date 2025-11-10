@@ -72,7 +72,7 @@ export const Hero = () => {
       </div>
 
       {/* Bottom-left overlay cards on clipped area */}
-      <div className="absolute z-10 bottom-6 left-6 grid grid-cols-2 gap-4 max-w-md">
+      <div className="absolute z-10 bottom-6 left-6 grid grid-cols-4 gap-4">
         <Card className="bg-white/90 backdrop-blur-sm border-white/30 p-4">
           <div className="text-sm font-bold text-primary">Impact</div>
           <div className="text-xs text-slate-600">Real-time monitoring</div>
