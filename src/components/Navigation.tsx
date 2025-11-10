@@ -49,14 +49,14 @@ export const Navigation = () => {
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("about")}
-              className="text-foreground hover:text-accent transition-colors"
+              className="text-foreground hover:text-accent transition-colors font-bold"
             >
               About
             </button>
             
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <button className="text-foreground hover:text-accent transition-colors flex items-center">
+                <button className="text-foreground hover:text-accent transition-colors flex items-center font-bold">
                   Segments
                 </button>
               </DropdownMenuTrigger>
@@ -78,19 +78,19 @@ export const Navigation = () => {
 
             <button
               onClick={() => scrollToSection("ecosystem")}
-              className="text-foreground hover:text-accent transition-colors"
+              className="text-foreground hover:text-accent transition-colors font-bold"
             >
               Ecosystem
             </button>
             <button
               onClick={() => scrollToSection("team")}
-              className="text-foreground hover:text-accent transition-colors"
+              className="text-foreground hover:text-accent transition-colors font-bold"
             >
               Team
             </button>
             <button
               onClick={() => scrollToSection("impact")}
-              className="text-foreground hover:text-accent transition-colors"
+              className="text-foreground hover:text-accent transition-colors font-bold"
             >
               Impact
             </button>
@@ -114,31 +114,31 @@ export const Navigation = () => {
           <div className="md:hidden py-4 space-y-4 border-t border-border">
             <button
               onClick={() => scrollToSection("about")}
-              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2"
+              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2 font-bold"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("segments")}
-              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2"
+              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2 font-bold"
             >
               Segments
             </button>
             <button
               onClick={() => scrollToSection("ecosystem")}
-              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2"
+              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2 font-bold"
             >
               Ecosystem
             </button>
             <button
               onClick={() => scrollToSection("team")}
-              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2"
+              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2 font-bold"
             >
               Team
             </button>
             <button
               onClick={() => scrollToSection("impact")}
-              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2"
+              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2 font-bold"
             >
               Impact
             </button>
