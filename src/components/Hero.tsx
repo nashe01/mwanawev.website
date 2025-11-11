@@ -32,7 +32,8 @@ export const Hero = () => {
           <span className="text-accent">Innovation & Technology</span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 max-w-2xl">
-          MwanaWev delivers cutting-edge conservation solutions, bridging technology and nature for sustainable impact across Africa.
+          MwanaWev delivers cutting-edge conservation solutions, bridging
+          technology and nature for sustainable impact across Africa.
         </p>
         <div className="flex gap-4 justify-start items-center">
           <a
@@ -74,20 +75,19 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* Bottom-left overlay cards on clipped area */}
-      <div className="absolute z-10 bottom-8 left-0 right-0">
+      {/* Bottom-left overlay cards (nudged ~3mm left) */}
+      <div className="absolute z-10 bottom-8 left-0 w-full">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-4 gap-5">
-            <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
-              <img src={clip1} alt="Impact" className="w-24 h-24 object-contain" />
+          <div className="flex gap-5 max-w-md -ml-3 sm:-ml-3 lg:-ml-3">
+            <Card className="aspect-square w-28 sm:w-32 bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
+              <img src={clip1} alt="Impact" className="w-20 h-20 object-contain" />
             </Card>
-            <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
-              <img src={clip2} alt="Tech" className="w-24 h-24 object-contain" />
+            <Card className="aspect-square w-28 sm:w-32 bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
+              <img src={clip2} alt="Tech" className="w-20 h-20 object-contain" />
             </Card>
-            <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
-              <img src={clip3} alt="Community" className="w-24 h-24 object-contain" />
+            <Card className="aspect-square w-28 sm:w-32 bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
+              <img src={clip3} alt="Community" className="w-20 h-20 object-contain" />
             </Card>
-            
           </div>
         </div>
       </div>
