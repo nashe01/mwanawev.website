@@ -80,13 +80,13 @@ export const Hero = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex gap-5 max-w-md -ml-3 sm:-ml-3 lg:-ml-3">
             <Card className="aspect-square w-28 sm:w-32 bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
-              <img src={clip1} alt="Impact" className="w-20 h-20 object-contain" />
+              <img src={clip1} alt="Impact" className="w-24 h-24 object-contain" />
             </Card>
             <Card className="aspect-square w-28 sm:w-32 bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
-              <img src={clip2} alt="Tech" className="w-20 h-20 object-contain" />
+              <img src={clip2} alt="Tech" className="w-24 h-24 object-contain" />
             </Card>
             <Card className="aspect-square w-28 sm:w-32 bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
-              <img src={clip3} alt="Community" className="w-20 h-20 object-contain" />
+              <img src={clip3} alt="Community" className="w-24 h-24 object-contain" />
             </Card>
           </div>
         </div>
