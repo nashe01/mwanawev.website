@@ -6,7 +6,7 @@ export const About = () => {
     <section id="about" className="py-20 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#DB6B2E] mb-4">
             About MwanaWev
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
