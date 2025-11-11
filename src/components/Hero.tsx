@@ -76,25 +76,17 @@ export const Hero = () => {
 
       {/* Bottom-left overlay cards on clipped area */}
       <div className="absolute z-10 bottom-6 left-6 grid grid-cols-4 gap-4">
-        <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg">
-          <img src={clip1} alt="Impact" className="w-8 h-8 mb-2 object-contain" />
-          <div className="text-sm font-bold text-primary">Impact</div>
-          <div className="text-xs text-slate-600">Real-time monitoring</div>
+        <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg flex items-center justify-center">
+          <img src={clip1} alt="Impact" className="w-8 h-8 object-contain" />
         </Card>
-        <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg">
-          <img src={clip2} alt="Tech" className="w-8 h-8 mb-2 object-contain" />
-          <div className="text-sm font-bold text-primary">Tech</div>
-          <div className="text-xs text-slate-600">AI-driven insights</div>
+        <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg flex items-center justify-center">
+          <img src={clip2} alt="Tech" className="w-8 h-8 object-contain" />
         </Card>
-        <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg">
-          <img src={clip3} alt="Community" className="w-8 h-8 mb-2 object-contain" />
-          <div className="text-sm font-bold text-primary">Community</div>
-          <div className="text-xs text-slate-600">Local engagement</div>
+        <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg flex items-center justify-center">
+          <img src={clip3} alt="Community" className="w-8 h-8 object-contain" />
         </Card>
-        <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg">
-          <img src={clip1} alt="Education" className="w-8 h-8 mb-2 object-contain" />
-          <div className="text-sm font-bold text-primary">Education</div>
-          <div className="text-xs text-slate-600">Training programs</div>
+        <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg flex items-center justify-center">
+          <img src={clip1} alt="Education" className="w-8 h-8 object-contain" />
         </Card>
       </div>
 
