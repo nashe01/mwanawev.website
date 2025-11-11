@@ -75,18 +75,18 @@ export const Hero = () => {
       </div>
 
       {/* Bottom-left overlay cards on clipped area */}
-      <div className="absolute z-10 bottom-6 left-6 grid grid-cols-4 gap-4">
-        <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg flex items-center justify-center">
-          <img src={clip1} alt="Impact" className="w-8 h-8 object-contain" />
+      <div className="absolute z-10 bottom-8 left-8 grid grid-cols-4 gap-5">
+        <Card className="bg-white/90 backdrop-blur-sm p-6 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
+          <img src={clip1} alt="Impact" className="w-12 h-12 object-contain" />
         </Card>
-        <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg flex items-center justify-center">
-          <img src={clip2} alt="Tech" className="w-8 h-8 object-contain" />
+        <Card className="bg-white/90 backdrop-blur-sm p-6 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
+          <img src={clip2} alt="Tech" className="w-12 h-12 object-contain" />
         </Card>
-        <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg flex items-center justify-center">
-          <img src={clip3} alt="Community" className="w-8 h-8 object-contain" />
+        <Card className="bg-white/90 backdrop-blur-sm p-6 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
+          <img src={clip3} alt="Community" className="w-12 h-12 object-contain" />
         </Card>
-        <Card className="bg-white/90 backdrop-blur-sm p-4 border-2 border-accent/60 hover:border-accent transition-colors shadow-lg shadow-black/20 rounded-lg flex items-center justify-center">
-          <img src={clip1} alt="Education" className="w-8 h-8 object-contain" />
+        <Card className="bg-white/90 backdrop-blur-sm p-6 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
+          <img src={clip1} alt="Education" className="w-12 h-12 object-contain" />
         </Card>
       </div>
 
