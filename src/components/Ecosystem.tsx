@@ -5,7 +5,7 @@ export const Ecosystem = () => {
     <section id="ecosystem" className="py-20 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#DB6B2E] mb-4">
             The MwanaWev Ecosystem
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -26,7 +26,7 @@ export const Ecosystem = () => {
           {/* Description Cards */}
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-card p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-foreground mb-3">
+              <h3 className="text-xl font-semibold text-[#DB6B2E] mb-3">
                 Data Integration
               </h3>
               <p className="text-muted-foreground">
@@ -34,7 +34,7 @@ export const Ecosystem = () => {
               </p>
             </div>
             <div className="bg-card p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-foreground mb-3">
+              <h3 className="text-xl font-semibold text-[#DB6B2E] mb-3">
                 Stakeholder Collaboration
               </h3>
               <p className="text-muted-foreground">
@@ -42,7 +42,7 @@ export const Ecosystem = () => {
               </p>
             </div>
             <div className="bg-card p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-foreground mb-3">
+              <h3 className="text-xl font-semibold text-[#DB6B2E] mb-3">
                 Continuous Impact
               </h3>
               <p className="text-muted-foreground">

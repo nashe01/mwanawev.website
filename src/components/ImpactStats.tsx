@@ -32,7 +32,7 @@ export const ImpactStats = () => {
     <section id="impact" className="py-20 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#DB6B2E] mb-4">
             Our Impact
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -49,10 +49,10 @@ export const ImpactStats = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/20 rounded-full mb-4 group-hover:bg-accent/30 transition-colors">
                 <stat.icon className="h-8 w-8 text-accent" />
               </div>
-              <div className="text-4xl sm:text-5xl font-bold text-foreground mb-2">
+              <div className="text-4xl sm:text-5xl font-bold text-[#DB6B2E] mb-2">
                 {stat.value}
               </div>
-              <div className="text-xl font-semibold text-foreground mb-2">
+              <div className="text-xl font-semibold text-[#DB6B2E] mb-2">
                 {stat.label}
               </div>
               <p className="text-sm text-muted-foreground">
