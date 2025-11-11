@@ -75,17 +75,21 @@ export const Hero = () => {
       </div>
 
       {/* Bottom-left overlay cards on clipped area */}
-      <div className="absolute z-10 bottom-8 left-4 sm:left-6 lg:left-8 grid grid-cols-4 gap-5">
-        <Card className="bg-white/90 backdrop-blur-sm p-6 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
-          <img src={clip1} alt="Impact" className="w-24 h-24 object-contain" />
-        </Card>
-        <Card className="bg-white/90 backdrop-blur-sm p-6 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
-          <img src={clip2} alt="Tech" className="w-24 h-24 object-contain" />
-        </Card>
-        <Card className="bg-white/90 backdrop-blur-sm p-6 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
-          <img src={clip3} alt="Community" className="w-24 h-24 object-contain" />
-        </Card>
-        
+      <div className="absolute z-10 bottom-8 left-0 right-0">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-4 gap-5">
+            <Card className="bg-white/90 backdrop-blur-sm p-6 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
+              <img src={clip1} alt="Impact" className="w-24 h-24 object-contain" />
+            </Card>
+            <Card className="bg-white/90 backdrop-blur-sm p-6 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
+              <img src={clip2} alt="Tech" className="w-24 h-24 object-contain" />
+            </Card>
+            <Card className="bg-white/90 backdrop-blur-sm p-6 border-2 border-accent/60 hover:border-accent transition-colors shadow-xl shadow-black/25 rounded-xl flex items-center justify-center">
+              <img src={clip3} alt="Community" className="w-24 h-24 object-contain" />
+            </Card>
+            
+          </div>
+        </div>
       </div>
 
       {/* Scroll Indicator */}
