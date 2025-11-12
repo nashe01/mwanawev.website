@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -43,30 +45,29 @@ export const Navigation = () => {
             <span className="text-xl font-semibold text-foreground">MwanaWev</span>
           </div>
 
-          {/* Segments Dropdown */}
-          <div className="flex items-center">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button className="text-foreground hover:text-accent transition-colors flex items-center font-bold">
-                  Segments
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-popover z-[60]">
-                <DropdownMenuItem onClick={() => scrollToSection("segments")}>
-                  Technology Solutions
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("segments")}>
-                  Conservation Services
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("segments")}>
-                  Education & Training
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("segments")}>
-                  Community Development
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
+          {/* Segments Dropdown Only */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="flex items-center gap-2">
+                <Menu className="h-4 w-4" />
+                Company Segments
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="bg-popover z-[60]" align="end">
+              <DropdownMenuItem onClick={() => scrollToSection("segments")}>
+                Technology Solutions
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => scrollToSection("segments")}>
+                Conservation Services
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => scrollToSection("segments")}>
+                Education & Training
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => scrollToSection("segments")}>
+                Community Development
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
     </nav>
