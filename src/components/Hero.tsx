@@ -27,13 +27,11 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-left">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-          Conservation Through
           <br />
-          <span className="text-accent">Innovation & Technology</span>
+          <span className="text-charcoal">Innovation & Technology</span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 max-w-2xl">
-          MwanaWev delivers cutting-edge conservation solutions, bridging
-          technology and nature for sustainable impact across Africa.
+        A diversified conglomerate driving innovation across FinTech, Drone Technology, Satellite Services, and Business Solutions
         </p>
         <div className="flex gap-4 justify-start items-center">
           <a
