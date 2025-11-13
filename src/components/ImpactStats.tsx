@@ -1,4 +1,5 @@
 import { TrendingUp, MapPin, Users, Award } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const stats = [
   {
@@ -28,8 +29,16 @@ const stats = [
 ];
 
 export const ImpactStats = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   return (
-    <section id="impact" className="py-20 bg-secondary">
+    <section 
+      id="impact" 
+      ref={ref as React.RefObject<HTMLElement>}
+      className={`py-20 bg-secondary transition-all duration-700 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#DB6B2E] mb-4">
