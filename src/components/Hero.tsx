@@ -9,83 +9,67 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative mt-16 min-h-[calc(100vh-4rem)] flex items-center justify-start"
+      className="relative mt-16 min-h-[calc(100vh-4rem)] flex items-center justify-start overflow-hidden bg-white"
     >
-      {/* Background Video with Overlay */}
-      <div className="absolute inset-0 overflow-hidden hero-clip">
+      {/* Background Video */}
+      <div className="absolute inset-0 hero-clip">
         <video
-          className="h-full w-full object-cover"
+          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2"
           autoPlay
           muted
           playsInline
-          onEnded={(event) => event.currentTarget.pause()}
         >
           <source src={heroBgVideo} type="video/mp4" />
         </video>
+
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-left">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
+        <h1 className="hidden md:block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
           <br />
           <span className="text-charcoal">Innovation & Technology</span>
         </h1>
-        <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 max-w-2xl">
-        A diversified conglomerate driving innovation across FinTech, Drone Technology, Satellite Services, and Business Solutions
+        <p className="hidden md:block text-base sm:text-lg md:text-xl text-charcoal mb-6 max-w-2xl">
+          A diversified conglomerate driving innovation across FinTech, Drone Technology, Satellite Services, and Business Solutions
         </p>
+
+        {/* Social Icons */}
         <div className="flex gap-4 justify-start items-center">
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
-          >
-            <Twitter size={20} />
-          </a>
-          <a
-            href="https://instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
-          >
-            <Instagram size={20} />
-          </a>
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
-          >
-            <Linkedin size={20} />
-          </a>
-          <a
-            href="https://www.youtube.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="YouTube"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
-          >
-            <Youtube size={20} />
-          </a>
+          {[
+            { icon: Twitter, href: "https://twitter.com/", label: "Twitter" },
+            { icon: Instagram, href: "https://instagram.com/", label: "Instagram" },
+            { icon: Linkedin, href: "https://www.linkedin.com/", label: "LinkedIn" },
+            { icon: Youtube, href: "https://www.youtube.com/", label: "YouTube" },
+          ].map(({ icon: Icon, href, label }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#51682C] hover:bg-[#3d5020] text-charcoal transition-colors"
+            >
+              <Icon size={20} />
+            </a>
+          ))}
         </div>
       </div>
 
-      {/* Bottom-left overlay cards (nudged ~3mm left) */}
+      {/* Bottom-left overlay cards */}
       <div className="absolute z-10 bottom-8 left-0 w-full">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex gap-5 max-w-md -ml-3 sm:-ml-3 lg:-ml-3">
-            <Card className="aspect-square w-28 sm:w-32 bg-white/90 backdrop-blur-sm p-4 border-2 border-gray-300 hover:border-gray-400 transition-colors shadow-2xl shadow-black/30 rounded-xl flex items-center justify-center">
-              <img src={clip1} alt="Impact" className="w-24 h-24 object-contain" />
-            </Card>
-            <Card className="aspect-square w-28 sm:w-32 bg-white/90 backdrop-blur-sm p-4 border-2 border-gray-300 hover:border-gray-400 transition-colors shadow-2xl shadow-black/30 rounded-xl flex items-center justify-center">
-              <img src={clip2} alt="Tech" className="w-24 h-24 object-contain" />
-            </Card>
-            <Card className="aspect-square w-28 sm:w-32 bg-white/90 backdrop-blur-sm p-4 border-2 border-gray-300 hover:border-gray-400 transition-colors shadow-2xl shadow-black/30 rounded-xl flex items-center justify-center">
-              <img src={clip3} alt="Community" className="w-24 h-24 object-contain" />
-            </Card>
+          <div className="flex gap-5 max-w-md -ml-3 sm:-ml-3 lg:-ml-3 overflow-x-auto pb-2">
+            {[clip1, clip2, clip3].map((clip, i) => (
+              <Card
+                key={i}
+                className="flex-shrink-0 aspect-square w-24 sm:w-28 md:w-32 bg-white backdrop-blur-sm p-4 transition-colors shadow-2xl shadow-black/30 rounded-xl flex items-center justify-center"
+              >
+                <img src={clip} alt={`Card ${i + 1}`} className="w-20 sm:w-24 h-20 sm:h-24 object-contain" />
+              </Card>
+            ))}
           </div>
         </div>
       </div>
