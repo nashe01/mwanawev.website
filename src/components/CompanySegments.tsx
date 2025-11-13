@@ -8,25 +8,25 @@ import communityImg from "@/assets/segment-community.jpg";
 const segments = [
   {
     icon: Cpu,
-    title: "Technology Solutions",
+    title: "MWANAWEV",
     description: "Advanced monitoring systems, IoT sensors, and AI-powered analytics for real-time conservation insights.",
     image: techImg,
   },
   {
     icon: Leaf,
-    title: "Conservation Services",
+    title: "PAYWEGA",
     description: "Comprehensive ecosystem management, wildlife tracking, and habitat restoration programs.",
     image: conservationImg,
   },
   {
     icon: GraduationCap,
-    title: "Education & Training",
+    title: "SKY-GIANTS",
     description: "Capacity building programs for communities and conservation professionals across Africa.",
     image: educationImg,
   },
   {
     icon: Users,
-    title: "Community Development",
+    title: "SAAS",
     description: "Sustainable livelihood initiatives that empower local communities as conservation stewards.",
     image: communityImg,
   },
@@ -41,7 +41,7 @@ export const CompanySegments = () => {
             Our Company Segments
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Integrated solutions across multiple domains to maximize conservation impact
+          Diverse portfolio of companies addressing critical market needs
           </p>
         </div>
 

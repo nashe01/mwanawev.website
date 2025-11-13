@@ -27,26 +27,33 @@ export const Ecosystem = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-card p-6 rounded-lg">
               <h3 className="text-xl font-semibold text-[#DB6B2E] mb-3">
-                Data Integration
+              Global Expansion and Strategic Partnerships
               </h3>
               <p className="text-muted-foreground">
-                Seamless flow of information between field sensors, community reports, and central analytics platforms.
+              Our vision spans far beyond Zimbabwe. We are charting a path to scale MwanaWev’s
+              transformative technologies across Africa and into the global arena. 
               </p>
             </div>
             <div className="bg-card p-6 rounded-lg">
               <h3 className="text-xl font-semibold text-[#DB6B2E] mb-3">
-                Stakeholder Collaboration
+              Sustainable and Community-Centric Innovation
+
               </h3>
               <p className="text-muted-foreground">
-                Connecting governments, NGOs, communities, and research institutions in unified conservation efforts.
+              Our future growth is anchored in the principle of Ubuntu, the belief that progress is only
+              meaningful when it uplifts everyone. 
               </p>
             </div>
             <div className="bg-card p-6 rounded-lg">
               <h3 className="text-xl font-semibold text-[#DB6B2E] mb-3">
-                Continuous Impact
+              Leveraging Cutting-Edge Technology
               </h3>
               <p className="text-muted-foreground">
-                Real-time monitoring and adaptive strategies ensure sustained positive outcomes for ecosystems and communities.
+              Our commitment to disruptive technologies shapes a future where AI powers advanced business
+analytics and forecasting, drones deliver both sustainable solutions and captivating entertainment,
+and satellite communications bridge critical connectivity gaps in education, healthcare, and
+agriculture.
+
               </p>
             </div>
           </div>

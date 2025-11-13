@@ -39,7 +39,7 @@ export const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-gray-300 transition-colors"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
           >
             <Twitter size={20} />
           </a>
@@ -48,7 +48,7 @@ export const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-gray-300 transition-colors"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
           >
             <Instagram size={20} />
           </a>
@@ -57,7 +57,7 @@ export const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-gray-300 transition-colors"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
           >
             <Linkedin size={20} />
           </a>
@@ -66,7 +66,7 @@ export const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-gray-300 transition-colors"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
           >
             <Youtube size={20} />
           </a>
