@@ -7,28 +7,28 @@ import { Linkedin } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Amara Okonkwo",
+    name: "TINASHE HUNDA",
     role: "Chief Executive Officer",
     image: team1,
   },
   {
-    name: "Kwame Mensah",
+    name: "NYASHA E. SHENJE",
     role: "Chief Technology Officer",
     image: team2,
   },
   {
-    name: "Dr. Elena Rodriguez",
-    role: "Director of Conservation",
+    name: "KWANELE MANUNGO",
+    role: "Chief Director - Strategy",
     image: team3,
   },
   {
-    name: "Michael Chen",
-    role: "Head of Data Science",
+    name: "GODFREY MUNKULI",
+    role: "Chief Communications Officer",
     image: team4,
   },
   {
-    name: "Zara Patel",
-    role: "Community Engagement Lead",
+    name: "NKOSINOMUSA NYONI",
+    role: "Chief Marketing and Growth Officer",
     image: team5,
   },
 ];
@@ -42,7 +42,10 @@ export const Team = () => {
             Meet Our Team
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Passionate experts dedicated to conservation innovation
+          MwanaWev is powered by a diverse team of innovators, entrepreneurs, and industry experts who share
+              a common passion for creating meaningful change. Our leadership brings together decades of experience 
+              across technology, finance, and business development, while our growing team represents the best 
+              of African talent and global expertise.
           </p>
         </div>
 

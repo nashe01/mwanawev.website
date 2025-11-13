@@ -3,7 +3,7 @@ import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="bg-charcoal text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
@@ -72,7 +72,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-primary-foreground/20 text-center text-sm opacity-70">
+        <div className="pt-8 border-t border-white/20 text-center text-sm opacity-70">
           <p>© 2025 MwanaWev. All rights reserved.</p>
         </div>
       </div>

@@ -46,16 +46,16 @@ export const ImpactStats = () => {
               key={index}
               className="text-center group"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/20 rounded-full mb-4 group-hover:bg-accent/30 transition-colors">
-                <stat.icon className="h-8 w-8 text-accent" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#51682C] hover:bg-[#3d5020] rounded-full mb-4 transition-colors">
+                <stat.icon className="h-8 w-8 text-charcoal" />
               </div>
-              <div className="text-4xl sm:text-5xl font-bold text-[#DB6B2E] mb-2">
+              <div className="text-4xl sm:text-5xl font-bold text-charcoal mb-2">
                 {stat.value}
               </div>
-              <div className="text-xl font-semibold text-[#DB6B2E] mb-2">
+              <div className="text-xl font-semibold text-charcoal mb-2">
                 {stat.label}
               </div>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-charcoal">
                 {stat.description}
               </p>
             </div>

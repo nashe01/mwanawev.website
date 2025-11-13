@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -10,7 +10,6 @@ import {
 import logo from "@/assets/logo.png";
 
 export const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -27,7 +26,6 @@ export const Navigation = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      setIsOpen(false);
     }
   };
 
@@ -47,108 +45,30 @@ export const Navigation = () => {
             <span className="text-xl font-semibold text-foreground">MwanaWev</span>
           </div>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-foreground hover:text-accent transition-colors font-bold"
-            >
-              About
-            </button>
-            
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button className="text-foreground hover:text-accent transition-colors flex items-center font-bold">
-                  Segments
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-popover z-[60]">
-                <DropdownMenuItem onClick={() => scrollToSection("segments")}>
-                  Technology Solutions
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("segments")}>
-                  Conservation Services
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("segments")}>
-                  Education & Training
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("segments")}>
-                  Community Development
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            <button
-              onClick={() => scrollToSection("ecosystem")}
-              className="text-foreground hover:text-accent transition-colors font-bold"
-            >
-              Ecosystem
-            </button>
-            <button
-              onClick={() => scrollToSection("team")}
-              className="text-foreground hover:text-accent transition-colors font-bold"
-            >
-              Team
-            </button>
-            <button
-              onClick={() => scrollToSection("impact")}
-              className="text-foreground hover:text-accent transition-colors font-bold"
-            >
-              Impact
-            </button>
-            
-            <Button variant="default" className="bg-accent hover:bg-accent/90">
-              Contact Us
-            </Button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-foreground"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Segments Dropdown Only */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="flex items-center gap-2">
+                <Menu className="h-4 w-4" />
+                Company Segments
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="bg-popover z-[60]" align="end">
+              <DropdownMenuItem onClick={() => scrollToSection("segments")}>
+                Technology Solutions
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => scrollToSection("segments")}>
+                Conservation Services
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => scrollToSection("segments")}>
+                Education & Training
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => scrollToSection("segments")}>
+                Community Development
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden py-4 space-y-4 border-t border-border">
-            <button
-              onClick={() => scrollToSection("about")}
-              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2 font-bold"
-            >
-              About
-            </button>
-            <button
-              onClick={() => scrollToSection("segments")}
-              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2 font-bold"
-            >
-              Segments
-            </button>
-            <button
-              onClick={() => scrollToSection("ecosystem")}
-              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2 font-bold"
-            >
-              Ecosystem
-            </button>
-            <button
-              onClick={() => scrollToSection("team")}
-              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2 font-bold"
-            >
-              Team
-            </button>
-            <button
-              onClick={() => scrollToSection("impact")}
-              className="block w-full text-left text-foreground hover:text-accent transition-colors py-2 font-bold"
-            >
-              Impact
-            </button>
-            <Button variant="default" className="w-full bg-accent hover:bg-accent/90">
-              Contact Us
-            </Button>
-          </div>
-        )}
       </div>
     </nav>
   );

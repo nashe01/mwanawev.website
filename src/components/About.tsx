@@ -24,9 +24,9 @@ export const About = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-foreground mb-3">Our Vision</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To be Africa's leading force in conservation technology, creating a future where
-                  wildlife and communities thrive together through innovation, data-driven insights,
-                  and sustainable development practices.
+                  To be Africa's leading innovation hub, creating sustainable solutions that drive economic growth 
+                  and improve quality of life across the continent. We envision a future where technology serves 
+                  as a bridge to opportunity for every community.
                 </p>
               </div>
             </div>
@@ -39,9 +39,9 @@ export const About = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-foreground mb-3">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To deliver innovative conservation solutions by integrating advanced technology,
-                  community engagement, and environmental expertise. We empower organizations and
-                  communities to protect biodiversity while fostering sustainable economic growth.
+                  To identify, develop, and scale innovative solutions that address real-world challenges, 
+                  particularly within emerging markets. We are committed to fostering entrepreneurship, 
+                  promoting financial inclusion, and leveraging technology for social good.
                 </p>
               </div>
             </div>
@@ -56,9 +56,10 @@ export const About = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-accent text-white p-6 rounded-lg shadow-xl max-w-xs">
-              <p className="font-semibold text-lg">
-                "Building bridges between technology and nature for a sustainable tomorrow"
+            <div className="absolute -bottom-6 -right-6 bg-accent p-6 rounded-lg shadow-xl max-w-xs">
+              <p className="font-semibold text-lg text-[#333333]">
+                MwanaWev is a dynamic holding company that serves as an innovation hub, creating and nurturing businesses 
+                that address real-world challenges through technology and creative solutions.
               </p>
             </div>
           </div>
@@ -67,3 +68,4 @@ export const About = () => {
     </section>
   );
 };
+
