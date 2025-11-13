@@ -72,7 +72,7 @@ export const CompanySegments = () => {
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {segment.description}
                 </p>
-                <Button variant="ghost" className="text-accent hover:text-accent/80 p-0">
+                <Button variant="ghost" className="text-charcoal hover:text-charcoal/80 font-bold p-0">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
