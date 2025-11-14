@@ -3,6 +3,7 @@ import team2 from "@/assets/team-2.jpg";
 import team3 from "@/assets/team-3.jpg";
 import team4 from "@/assets/team-4.jpg";
 import team5 from "@/assets/team-5.jpg";
+import team6 from "@/assets/team-6.jpg"; // add your 6th image
 import { Linkedin } from "lucide-react";
 import { FadeIn } from "@/components/FadeIn";
 
@@ -32,6 +33,11 @@ const teamMembers = [
     role: "Chief Marketing and Growth Officer",
     image: team5,
   },
+  {
+    name: "NEW MEMBER",
+    role: "New Role",
+    image: team6,
+  },
 ];
 
 export const Team = () => {
@@ -52,15 +58,16 @@ export const Team = () => {
           </div>
         </FadeIn>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+        {/* 3 in a row - cards made smaller */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {teamMembers.map((member, index) => (
             <FadeIn key={index} direction="scale" delay={index * 100}>
-              <div className="group text-center">
+              <div className="group text-center max-w-[260px] mx-auto">
                 <div className="relative mb-4 overflow-hidden rounded-lg shadow-md">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
                     <button className="bg-accent text-white p-2 rounded-full hover:bg-accent/90 transition-colors">

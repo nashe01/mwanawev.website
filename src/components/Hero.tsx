@@ -48,8 +48,11 @@ export const Hero = () => {
             hidden md:block text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
             font-bold text-white mb-4 leading-tight
             transition-opacity duration-700
-            ${videoDone ? "opacity-100 delay-[300ms]" : "opacity-0"}
+            ${videoDone ? "opacity-100" : "opacity-0"}
           `}
+          style={{
+            transitionDelay: videoDone ? "300ms" : "0ms",
+          }}
         >
           <br />
           <span className="text-charcoal">Innovation & Technology</span>
@@ -60,8 +63,11 @@ export const Hero = () => {
           className={`
             hidden md:block text-base sm:text-lg md:text-xl text-charcoal mb-6 max-w-2xl
             transition-opacity duration-700
-            ${videoDone ? "opacity-100 delay-[900ms]" : "opacity-0"}
+            ${videoDone ? "opacity-100" : "opacity-0"}
           `}
+          style={{
+            transitionDelay: videoDone ? "900ms" : "0ms",
+          }}
         >
           A diversified conglomerate driving innovation across FinTech, Drone Technology,
           Satellite Services, and Business Solutions
@@ -126,8 +132,11 @@ export const Hero = () => {
         className={`
           absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce
           opacity-0 transition-opacity duration-700 
-          ${videoDone ? "opacity-100 delay-[3500ms]" : ""}
+          ${videoDone ? "opacity-100" : ""}
         `}
+        style={{
+          transitionDelay: videoDone ? "3500ms" : "0ms",
+        }}
       >
         <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
           <div className="w-1 h-3 bg-white/50 rounded-full" />
