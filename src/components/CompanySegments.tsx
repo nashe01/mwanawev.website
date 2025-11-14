@@ -1,10 +1,10 @@
 import { ArrowRight, Cpu, Leaf, GraduationCap, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/FadeIn";
-import techImg from "@/assets/segment-tech.jpg";
-import conservationImg from "@/assets/segment-conservation.jpg";
-import educationImg from "@/assets/segment-education.jpg";
-import communityImg from "@/assets/segment-community.jpg";
+import techImg from "@/assets/mwanawev.jpg";
+import conservationImg from "@/assets/paywega.jpg";
+import educationImg from "@/assets/skygiants.jpg";
+import communityImg from "@/assets/saas.jpg";
 
 const segments = [
   {
