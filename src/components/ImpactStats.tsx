@@ -1,4 +1,5 @@
 import { TrendingUp, MapPin, Users, Award } from "lucide-react";
+import { FadeIn } from "@/components/FadeIn";
 
 const stats = [
   {
@@ -31,34 +32,35 @@ export const ImpactStats = () => {
   return (
     <section id="impact" className="py-20 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#DB6B2E] mb-4">
-            Our Impact
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Measurable results driving conservation success across Africa
-          </p>
-        </div>
+        <FadeIn direction="up">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#DB6B2E] mb-4">
+              Our Impact
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Measurable results driving conservation success across Africa
+            </p>
+          </div>
+        </FadeIn>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="text-center group"
-            >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#51682C] hover:bg-[#3d5020] rounded-full mb-4 transition-colors">
-                <stat.icon className="h-8 w-8 text-charcoal" />
+            <FadeIn key={index} direction="scale" delay={index * 100}>
+              <div className="text-center group">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#51682C] hover:bg-[#3d5020] rounded-full mb-4 transition-colors">
+                  <stat.icon className="h-8 w-8 text-charcoal" />
+                </div>
+                <div className="text-4xl sm:text-5xl font-bold text-charcoal mb-2">
+                  {stat.value}
+                </div>
+                <div className="text-xl font-semibold text-charcoal mb-2">
+                  {stat.label}
+                </div>
+                <p className="text-sm text-charcoal">
+                  {stat.description}
+                </p>
               </div>
-              <div className="text-4xl sm:text-5xl font-bold text-charcoal mb-2">
-                {stat.value}
-              </div>
-              <div className="text-xl font-semibold text-charcoal mb-2">
-                {stat.label}
-              </div>
-              <p className="text-sm text-charcoal">
-                {stat.description}
-              </p>
-            </div>
+            </FadeIn>
           ))}
         </div>
       </div>
