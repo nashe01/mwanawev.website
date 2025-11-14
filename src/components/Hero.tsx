@@ -1,11 +1,15 @@
+import { useState } from "react";
 import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import { Card } from "@/components/ui/card";
+
 import heroBgVideo from "@/assets/hero-bg.mp4";
 import clip1 from "@/assets/clip1.png";
 import clip2 from "@/assets/clip2.png";
 import clip3 from "@/assets/clip3.png";
 
 export const Hero = () => {
+  const [videoDone, setVideoDone] = useState(false);
+
   return (
     <section
       id="hero"
@@ -18,6 +22,7 @@ export const Hero = () => {
           autoPlay
           muted
           playsInline
+          onEnded={() => setVideoDone(true)}
         >
           <source src={heroBgVideo} type="video/mp4" />
         </video>
@@ -27,17 +32,31 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-left">
+      <div
+        className={`
+          relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-left
+          transition-opacity duration-700 delay-300
+          ${videoDone ? "opacity-100" : "opacity-0"}
+        `}
+      >
         <h1 className="hidden md:block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
           <br />
           <span className="text-charcoal">Innovation & Technology</span>
         </h1>
+
         <p className="hidden md:block text-base sm:text-lg md:text-xl text-charcoal mb-6 max-w-2xl">
-          A diversified conglomerate driving innovation across FinTech, Drone Technology, Satellite Services, and Business Solutions
+          A diversified conglomerate driving innovation across FinTech,
+          Drone Technology, Satellite Services, and Business Solutions
         </p>
 
         {/* Social Icons */}
-        <div className="flex gap-4 justify-start items-center">
+        <div
+          className={`
+            flex gap-4 justify-start items-center
+            transition-opacity duration-700 delay-500
+            ${videoDone ? "opacity-100" : "opacity-0"}
+          `}
+        >
           {[
             { icon: Twitter, href: "https://twitter.com/", label: "Twitter" },
             { icon: Instagram, href: "https://instagram.com/", label: "Instagram" },
@@ -59,7 +78,13 @@ export const Hero = () => {
       </div>
 
       {/* Bottom-left overlay cards */}
-      <div className="absolute z-10 bottom-8 left-0 w-full">
+      <div
+        className={`
+          absolute z-10 bottom-8 left-0 w-full
+          transition-opacity duration-700 delay-700
+          ${videoDone ? "opacity-100" : "opacity-0"}
+        `}
+      >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex gap-5 max-w-md -ml-3 sm:-ml-3 lg:-ml-3 overflow-x-auto pb-2">
             {[clip1, clip2, clip3].map((clip, i) => (
@@ -67,7 +92,11 @@ export const Hero = () => {
                 key={i}
                 className="flex-shrink-0 aspect-square w-24 sm:w-28 md:w-32 bg-white backdrop-blur-sm p-4 transition-colors shadow-2xl shadow-black/30 rounded-xl flex items-center justify-center"
               >
-                <img src={clip} alt={`Card ${i + 1}`} className="w-20 sm:w-24 h-20 sm:h-24 object-contain" />
+                <img
+                  src={clip}
+                  alt={`Card ${i + 1}`}
+                  className="w-20 sm:w-24 h-20 sm:h-24 object-contain"
+                />
               </Card>
             ))}
           </div>
@@ -75,7 +104,13 @@ export const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div
+        className={`
+          absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce
+          transition-opacity duration-700 delay-1000
+          ${videoDone ? "opacity-100" : "opacity-0"}
+        `}
+      >
         <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
           <div className="w-1 h-3 bg-white/50 rounded-full" />
         </div>
