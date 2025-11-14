@@ -1,5 +1,5 @@
 import { Target, Eye } from "lucide-react";
-import visionImg from "@/assets/vision-illustration.jpg";
+import visionImg from "@/assets/vision-illustration.png";
 import { FadeIn } from "@/components/FadeIn";
 
 export const About = () => {
@@ -20,16 +20,17 @@ export const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Vision & Mission */}
           <div className="space-y-6">
+
             <FadeIn direction="left" delay={200}>
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 border border-[#51682C] p-4 rounded-xl">
                 <div className="bg-accent/10 p-3 rounded-lg">
                   <Eye className="h-8 w-8 text-accent" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-semibold text-foreground mb-3">Our Vision</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    To be Africa's leading innovation hub, creating sustainable solutions that drive economic growth 
-                    and improve quality of life across the continent. We envision a future where technology serves 
+                    To be Africa's leading innovation hub, creating sustainable solutions that drive economic growth
+                    and improve quality of life across the continent. We envision a future where technology serves
                     as a bridge to opportunity for every community.
                   </p>
                 </div>
@@ -37,20 +38,21 @@ export const About = () => {
             </FadeIn>
 
             <FadeIn direction="left" delay={400}>
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 border border-[#51682C] p-4 rounded-xl">
                 <div className="bg-accent/10 p-3 rounded-lg">
                   <Target className="h-8 w-8 text-accent" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-semibold text-foreground mb-3">Our Mission</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    To identify, develop, and scale innovative solutions that address real-world challenges, 
-                    particularly within emerging markets. We are committed to fostering entrepreneurship, 
+                    To identify, develop, and scale innovative solutions that address real-world challenges,
+                    particularly within emerging markets. We are committed to fostering entrepreneurship,
                     promoting financial inclusion, and leveraging technology for social good.
                   </p>
                 </div>
               </div>
             </FadeIn>
+
           </div>
 
           {/* Image */}
@@ -65,14 +67,16 @@ export const About = () => {
               </div>
               <div className="absolute -bottom-6 -right-6 bg-accent p-6 rounded-lg shadow-xl max-w-xs">
                 <p className="font-semibold text-lg text-[#333333]">
-                  MwanaWev is a dynamic holding company that serves as an innovation hub, that address real-world challenges through technology and creative solutions.
+                  An innovation hub, that address real-world challenges through technology and creative solutions.
                 </p>
               </div>
             </div>
           </FadeIn>
+
         </div>
       </div>
     </section>
   );
 };
+
 
