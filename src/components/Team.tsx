@@ -4,7 +4,6 @@ import team3 from "@/assets/team-3.jpg";
 import team4 from "@/assets/team-4.jpg";
 import team5 from "@/assets/team-5.jpg";
 import { Linkedin } from "lucide-react";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const teamMembers = [
   {
@@ -35,16 +34,8 @@ const teamMembers = [
 ];
 
 export const Team = () => {
-  const { ref, isVisible } = useScrollAnimation();
-  
   return (
-    <section 
-      id="team" 
-      ref={ref as React.RefObject<HTMLElement>}
-      className={`py-20 bg-background transition-all duration-700 ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}
-    >
+    <section id="team" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#DB6B2E] mb-4">
