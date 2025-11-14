@@ -42,7 +42,7 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-left">
 
-        {/* Headline (entire block fades in) */}
+        {/* Headline */}
         <h1
           className={`
             hidden md:block text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
@@ -58,7 +58,7 @@ export const Hero = () => {
           <span className="text-charcoal">Innovation & Technology</span>
         </h1>
 
-        {/* Subtext (entire block fades in after headline) */}
+        {/* Subtext */}
         <p
           className={`
             hidden md:block text-base sm:text-lg md:text-xl text-charcoal mb-6 max-w-2xl
@@ -73,7 +73,7 @@ export const Hero = () => {
           Satellite Services, and Business Solutions
         </p>
 
-        {/* Icons → fade icon by icon */}
+        {/* Social Icons */}
         <div className="flex gap-4 justify-start items-center mt-4">
           {socialIcons.map(({ icon: Icon, href, label }, i) => (
             <a
@@ -99,35 +99,37 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* Cards → fade card by card */}
+      {/* Cards */}
       <div className="absolute z-10 bottom-8 left-0 w-full">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex gap-5 max-w-md -ml-3 overflow-x-auto pb-2">
             {cards.map((clip, i) => (
               <Card
-                key={i}
-                className={`
-                  flex-shrink-0 aspect-square w-24 sm:w-28 md:w-32 
-                  bg-white backdrop-blur-sm p-4 rounded-xl shadow-2xl shadow-black/30
-                  opacity-0 transition-opacity duration-700
-                  ${videoDone ? "opacity-100" : ""}
-                `}
-                style={{
-                  transitionDelay: `${2300 + i * 300}ms`,
-                }}
-              >
-                <img
-                  src={clip}
-                  alt={`Card ${i + 1}`}
-                  className="w-20 sm:w-24 h-20 sm:h-24 object-contain"
-                />
-              </Card>
+              key={i}
+              className={`
+                flex-shrink-0 aspect-square w-24 sm:w-28 md:w-32 
+                bg-white backdrop-blur-sm p-4 rounded-xl shadow-2xl shadow-black/30
+                border-4 border-[#3D5020]     /* <-- THICKER BORDER */
+                opacity-0 transition-opacity duration-700
+                ${videoDone ? "opacity-100" : ""}
+              `}
+              style={{
+                transitionDelay: `${2300 + i * 300}ms`,
+              }}
+            >
+              <img
+                src={clip}
+                alt={`Card ${i + 1}`}
+                className="w-20 sm:w-24 h-20 sm:h-24 object-contain"
+              />
+            </Card>
+            
             ))}
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator → appears last */}
+      {/* Scroll Indicator */}
       <div
         className={`
           absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce
@@ -145,3 +147,4 @@ export const Hero = () => {
     </section>
   );
 };
+
