@@ -9,77 +9,79 @@ const segments = [
   {
     icon: Cpu,
     title: "MWANAWEV",
-    description: "Advanced monitoring systems, IoT sensors, and AI-powered analytics for real-time conservation insights.",
+    description:
+      "Advanced monitoring systems, IoT sensors, and AI-powered analytics for real-time conservation insights.",
     image: techImg,
   },
   {
     icon: Leaf,
     title: "PAYWEGA",
-    description: "Comprehensive ecosystem management, wildlife tracking, and habitat restoration programs.",
+    description:
+      "Comprehensive ecosystem management, wildlife tracking, and habitat restoration programs.",
     image: conservationImg,
   },
   {
     icon: GraduationCap,
     title: "SKY-GIANTS",
-    description: "Capacity building programs for communities and conservation professionals across Africa.",
+    description:
+      "Capacity building programs for communities and conservation professionals across Africa.",
     image: educationImg,
   },
   {
     icon: Users,
     title: "SAAS",
-    description: "Sustainable livelihood initiatives that empower local communities as conservation stewards.",
+    description:
+      "Sustainable livelihood initiatives that empower local communities as conservation stewards.",
     image: communityImg,
   },
 ];
 
 export const CompanySegments = () => {
   return (
-    <section id="segments" className="py-20 bg-background">
+    <section id="segments" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#DB6B2E] mb-4">
+
+        <div className="text-center mb-20">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#DB6B2E] mb-6">
             Our Company Segments
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Diverse portfolio of companies addressing critical market needs
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Diverse portfolio of companies addressing critical market needs
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
+        {/* Grid 2 per row */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
           {segments.map((segment, index) => (
             <div
               key={index}
-              className="group bg-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex overflow-hidden w-full"
             >
-              {/* Image */}
-              <div className="relative h-64 overflow-hidden">
+              {/* Left Image */}
+              <div className="w-1/2 h-auto">
                 <img
                   src={segment.image}
                   alt={segment.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 bg-accent/90 p-3 rounded-lg">
-                  <segment.icon className="h-6 w-6 text-white" />
-                </div>
               </div>
 
-              {/* Content */}
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold text-[#DB6B2E] mb-3">
-                  {segment.title}
-                </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
+              {/* Right Text Section */}
+              <div className="w-1/2 p-8 flex flex-col justify-center">
+                <segment.icon className="h-10 w-10 mb-4 text-[#DB6B2E]" />
+                <h3 className="text-2xl font-bold mb-3">{segment.title}</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
                   {segment.description}
                 </p>
-                <Button variant="ghost" className="text-accent hover:text-accent/80 p-0">
+                <Button variant="ghost" className="text-[#DB6B2E] p-0 text-lg w-fit">
                   Learn More
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
