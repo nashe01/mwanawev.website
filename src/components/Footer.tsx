@@ -1,36 +1,24 @@
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/Asset 55.png";
 
 export const Footer = () => {
   return (
-    <footer className="bg-charcoal text-white py-12">
+    <footer className="bg-charcoal text-white py-6">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-6">
+          
           {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <img src={logo} alt="MwanaWev Logo" className="h-10 w-10 brightness-0 invert" />
-              <span className="text-xl font-semibold">MwanaWev</span>
-            </div>
-            <p className="text-sm opacity-80">
-              Conservation through innovation and technology
-            </p>
-            <div className="flex space-x-4">
-              <button className="hover:text-accent transition-colors">
-                <Linkedin size={20} />
-              </button>
-              <button className="hover:text-accent transition-colors">
-                <Twitter size={20} />
-              </button>
-              <button className="hover:text-accent transition-colors">
-                <Facebook size={20} />
-              </button>
-            </div>
+          <div className="h-40 flex items-center">
+            <img
+              src={logo}
+              alt="MwanaWev Logo"
+              className="h-full w-auto brightness-0 invert object-contain"
+            />
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-lg mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm opacity-80">
               <li><a href="#about" className="hover:text-accent transition-colors">About Us</a></li>
               <li><a href="#segments" className="hover:text-accent transition-colors">Segments</a></li>
@@ -42,7 +30,7 @@ export const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Services</h3>
+            <h3 className="font-semibold text-lg mb-3">Services</h3>
             <ul className="space-y-2 text-sm opacity-80">
               <li><a href="#" className="hover:text-accent transition-colors">Technology Solutions</a></li>
               <li><a href="#" className="hover:text-accent transition-colors">Conservation Services</a></li>
@@ -53,7 +41,7 @@ export const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contact</h3>
+            <h3 className="font-semibold text-lg mb-3">Contact</h3>
             <ul className="space-y-3 text-sm opacity-80">
               <li className="flex items-start space-x-2">
                 <MapPin size={18} className="mt-1 flex-shrink-0" />
@@ -72,7 +60,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/20 text-center text-sm opacity-70">
+        <div className="pt-6 border-t border-white/20 text-center text-sm opacity-70">
           <p>© 2025 MwanaWev. All rights reserved.</p>
         </div>
       </div>
