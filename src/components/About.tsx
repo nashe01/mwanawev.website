@@ -65,8 +65,7 @@ export const About = () => {
               </div>
               <div className="absolute -bottom-6 -right-6 bg-accent p-6 rounded-lg shadow-xl max-w-xs">
                 <p className="font-semibold text-lg text-[#333333]">
-                  MwanaWev is a dynamic holding company that serves as an innovation hub, creating and nurturing businesses 
-                  that address real-world challenges through technology and creative solutions.
+                  MwanaWev is a dynamic holding company that serves as an innovation hub, that address real-world challenges through technology and creative solutions.
                 </p>
               </div>
             </div>

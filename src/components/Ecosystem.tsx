@@ -36,7 +36,7 @@ export const Ecosystem = () => {
                   Global Expansion and Strategic Partnerships
                 </h3>
                 <p className="text-muted-foreground">
-                  Our vision spans far beyond Zimbabwe. We are charting a path to scale MwanaWev's
+                  We are charting a path to scale MwanaWev's
                   transformative technologies across Africa and into the global arena. 
                 </p>
               </div>
@@ -58,10 +58,8 @@ export const Ecosystem = () => {
                   Leveraging Cutting-Edge Technology
                 </h3>
                 <p className="text-muted-foreground">
-                  Our commitment to disruptive technologies shapes a future where AI powers advanced business
-                  analytics and forecasting, drones deliver both sustainable solutions and captivating entertainment,
-                  and satellite communications bridge critical connectivity gaps in education, healthcare, and
-                  agriculture.
+                  A future where AI powers advanced business
+                  analytics and forecasting, drones deliver both sustainable solutions.
                 </p>
               </div>
             </FadeIn>
