@@ -44,7 +44,7 @@ export const Navigation = () => {
             className="flex items-center space-x-3 cursor-pointer"
             onClick={() => scrollToSection("hero")}
           >
-            <img src={logo} alt="MwanaWev Logo" className="h-40 w-40" />
+            <img src={logo} alt="MwanaWev Logo" className="h-80 w-80" />
           </div>
 
           {/* Segments Dropdown Only */}
