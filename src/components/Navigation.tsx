@@ -40,8 +40,11 @@ export const Navigation = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection("hero")}>
-            <img src={logo} alt="MwanaWev Logo" className="h-10 w-10" />
+          <div
+            className="flex items-center space-x-3 cursor-pointer"
+            onClick={() => scrollToSection("hero")}
+          >
+            <img src={logo} alt="MwanaWev Logo" className="h-40 w-40" />
           </div>
 
           {/* Segments Dropdown Only */}
