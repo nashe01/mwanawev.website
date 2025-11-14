@@ -7,7 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/Asset 55.png";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,7 +42,6 @@ export const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection("hero")}>
             <img src={logo} alt="MwanaWev Logo" className="h-10 w-10" />
-            <span className="text-xl font-semibold text-foreground">MwanaWev</span>
           </div>
 
           {/* Segments Dropdown Only */}
