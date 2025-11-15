@@ -50,7 +50,7 @@ export const Team = () => {
               Meet Our Team
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              MwanaWev is powered by a diverse team of innovators, entrepreneurs, and industry experts who share
+              Mwanawev is powered by a diverse team of innovators, entrepreneurs, and industry experts who share
               a common passion for creating meaningful change. Our leadership brings together decades of experience 
               across technology, finance, and business development, while our growing team represents the best 
               of African talent and global expertise.

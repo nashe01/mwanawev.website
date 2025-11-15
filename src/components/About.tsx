@@ -9,7 +9,7 @@ export const About = () => {
         <FadeIn direction="up">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#DB6B2E] mb-4">
-              About MwanaWev
+              About Mwanawev
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Pioneering sustainable solutions that harmonize technology with conservation

@@ -8,7 +8,7 @@ export const Ecosystem = () => {
         <FadeIn direction="up">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#DB6B2E] mb-4">
-              The MwanaWev Ecosystem
+              The Mwanawev Ecosystem
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               An interconnected network of services, technology, and community partnerships
@@ -22,7 +22,7 @@ export const Ecosystem = () => {
             <div className="relative mb-12">
               <img
                 src={ecosystemImg}
-                alt="MwanaWev Ecosystem Diagram"
+                alt="Mwanawev Ecosystem Diagram"
                 className="w-full rounded-2xl shadow-lg"
               />
             </div>
@@ -36,7 +36,7 @@ export const Ecosystem = () => {
                   Global Expansion and Strategic Partnerships
                 </h3>
                 <p className="text-muted-foreground">
-                  We are charting a path to scale MwanaWev's
+                  We are charting a path to scale Mwanawev's
                   transformative technologies across Africa and into the global arena. 
                 </p>
               </div>

@@ -8,8 +8,8 @@ const stats = [
     icon: MapPin,
     value: 50000,
     suffix: "+",
-    label: "Hectares Protected",
-    description: "Conservation areas under active monitoring",
+    label: "Potential Users",
+    description: "Across Africa",
   },
   {
     icon: Users,
@@ -22,15 +22,15 @@ const stats = [
     icon: TrendingUp,
     value: 85,
     suffix: "%",
-    label: "Wildlife Increase",
-    description: "Improvement in monitored populations",
+    label: "Cash Dependency Rate",
+    description: "Reduction in cash dependency",
   },
   {
     icon: Award,
     value: 15,
     suffix: "+",
     label: "International Awards",
-    description: "Recognition for conservation innovation",
+    description: "Recognition for technology innovation",
   },
 ];
 

@@ -55,7 +55,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={18} className="flex-shrink-0" />
-                <span>+254 700 000 000</span>
+                <span>+263 700 000 000</span>
               </li>
             </ul>
           </div>
@@ -63,7 +63,7 @@ export const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-white/20 text-center text-sm opacity-70">
-          <p>© 2025 MwanaWev. All rights reserved.</p>
+          <p>© 2025 Mwanawev. All rights reserved.</p>
         </div>
 
       </div>

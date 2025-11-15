@@ -57,15 +57,20 @@ const SegmentCard = ({ segment, index }: SegmentCardProps) => {
 
         {/* Right Text Section */}
         <div className="w-1/2 p-8 flex flex-col justify-center">
-          <segment.icon className="h-10 w-10 mb-4 text-[#DB6B2E]" />
+          <segment.icon className="h-10 w-10 mb-4 text-[#51682C]" />
           <h3 className="text-2xl font-bold mb-3">{segment.title}</h3>
           <p className="text-muted-foreground mb-6 leading-relaxed">
             {segment.description}
           </p>
-          <Button variant="ghost" className="text-[#DB6B2E] p-0 text-lg w-fit">
-            Learn More
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Button
+  variant="ghost"
+  className="text-[#51682C] font-bold p-0 text-lg w-fit hover:bg-transparent hover:text-[#51682C] hover:scale-105"
+>
+  Learn More
+  <ArrowRight className="ml-2 h-5 w-5" />
+</Button>
+
+
         </div>
       </div>
     </FadeIn>
