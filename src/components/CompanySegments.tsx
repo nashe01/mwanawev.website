@@ -45,7 +45,7 @@ interface SegmentCardProps {
 const SegmentCard = ({ segment, index }: SegmentCardProps) => {
   return (
     <FadeIn direction="up" delay={index * 150}>
-      <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex overflow-hidden w-full">
+      <div className="group bg-white rounded-2xl border-2 border-[#51682C] shadow-lg hover:shadow-2xl transition-all duration-500 flex overflow-hidden w-full">
         {/* Left Image */}
         <div className="w-1/2 h-auto overflow-hidden">
           <img
@@ -62,15 +62,14 @@ const SegmentCard = ({ segment, index }: SegmentCardProps) => {
           <p className="text-muted-foreground mb-6 leading-relaxed">
             {segment.description}
           </p>
+
           <Button
-  variant="ghost"
-  className="text-[#51682C] font-bold p-0 text-lg w-fit hover:bg-transparent hover:text-[#51682C] hover:scale-105"
->
-  Learn More
-  <ArrowRight className="ml-2 h-5 w-5" />
-</Button>
-
-
+            variant="ghost"
+            className="text-[#51682C] font-bold p-0 text-lg w-fit hover:bg-transparent hover:text-[#51682C] hover:scale-105"
+          >
+            Learn More
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
         </div>
       </div>
     </FadeIn>
@@ -81,7 +80,6 @@ export const CompanySegments = () => {
   return (
     <section id="segments" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-
         <FadeIn direction="up">
           <div className="text-center mb-20">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#DB6B2E] mb-6">
@@ -99,7 +97,6 @@ export const CompanySegments = () => {
             <SegmentCard key={index} segment={segment} index={index} />
           ))}
         </div>
-
       </div>
     </section>
   );
