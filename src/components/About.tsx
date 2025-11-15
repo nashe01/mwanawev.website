@@ -12,7 +12,9 @@ export const About = () => {
               About Mwanawev
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Pioneering sustainable solutions that harmonize technology with conservation
+            creating sustainable solutions that drive economic growth
+                    and improve quality of life across the continent. We envision a future where technology serves
+                    as a bridge to opportunity for every community.
             </p>
           </div>
         </FadeIn>
@@ -57,20 +59,24 @@ export const About = () => {
 
           {/* Image */}
           <FadeIn direction="right" delay={300}>
-            <div className="relative">
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
-                <img
-                  src={visionImg}
-                  alt="Vision and Mission"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -right-6 bg-accent p-6 rounded-lg shadow-xl max-w-xs">
-                <p className="font-semibold text-lg text-[#333333]">
-                  An innovation hub, that address real-world challenges through technology and creative solutions.
-                </p>
-              </div>
-            </div>
+          <div className="relative">
+  {/* Image Card */}
+  <div className="aspect-square rounded-2xl overflow-hidden shadow-lg border border-[#51682C]">
+    <img
+      src={visionImg}
+      alt="Vision and Mission"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* Text Card */}
+  <div className="absolute -bottom-6 -right-6 bg-accent p-6 rounded-lg shadow-xl max-w-xs border border-[#51682C]">
+    <p className="font-semibold text-lg text-[#333333]">
+      An innovation hub, that address real-world challenges through technology and creative solutions.
+    </p>
+  </div>
+</div>
+
           </FadeIn>
 
         </div>
