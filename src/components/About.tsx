@@ -58,27 +58,43 @@ export const About = () => {
           </div>
 
           {/* Image */}
-          <FadeIn direction="right" delay={300}>
-            <div className="relative">
+<FadeIn direction="right" delay={300}>
+  <div className="relative">
 
-              {/* Image Card */}
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-lg border-2 border-[#51682C]">
-                <img
-                  src={visionImg}
-                  alt="Vision and Mission"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+    {/* Image Card */}
+    <div className="aspect-square rounded-2xl overflow-hidden shadow-lg border-2 border-[#51682C]">
+      <img
+        src={visionImg}
+        alt="Vision and Mission"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-              {/* Text Card */}
-              <div className="absolute -bottom-6 -right-6 bg-charcoal p-6 rounded-lg shadow-xl max-w-xs border-2 border-[#51682C]">
-                <p className="font-semibold text-lg text-[#DB6B2E]">
-                  An innovation hub, that address real-world challenges through technology and creative solutions.
-                </p>
-              </div>
+    {/* Text Card */}
+    <div
+      className="
+        absolute
+        -bottom-4 -right-4         /* mobile size */
+        bg-charcoal 
+        p-4                        /* mobile padding */
+        rounded-lg 
+        shadow-xl 
+        max-w-[70%]                /* mobile width */
+        border-2 border-[#51682C]
 
-            </div>
-          </FadeIn>
+        sm:-bottom-6 sm:-right-6   /* tablet+ adjustments */
+        sm:p-6
+        sm:max-w-xs                /* tablet+ width */
+      "
+    >
+      <p className="font-semibold text-base sm:text-lg text-[#DB6B2E]">
+        An innovation hub, that address real-world challenges through technology and creative solutions.
+      </p>
+    </div>
+
+  </div>
+</FadeIn>
+
 
         </div>
       </div>
