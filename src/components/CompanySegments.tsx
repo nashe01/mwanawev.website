@@ -45,18 +45,20 @@ interface SegmentCardProps {
 const SegmentCard = ({ segment, index }: SegmentCardProps) => {
   return (
     <FadeIn direction="up" delay={index * 150}>
-      <div className="group bg-white rounded-2xl border-2 border-[#51682C] shadow-lg hover:shadow-2xl transition-all duration-500 flex overflow-hidden w-full">
-        {/* Left Image */}
-        <div className="w-1/2 h-auto overflow-hidden">
+      <div className="group bg-white rounded-2xl border-2 border-[#51682C] shadow-lg hover:shadow-2xl transition-all duration-500 
+        flex flex-col sm:flex-row overflow-hidden w-full">
+
+        {/* Image (KEEPS ORIGINAL SHAPE) */}
+        <div className="w-full sm:w-1/2 overflow-hidden">
           <img
             src={segment.image}
             alt={segment.title}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
           />
         </div>
 
-        {/* Right Text Section */}
-        <div className="w-1/2 p-8 flex flex-col justify-center">
+        {/* Text Section */}
+        <div className="w-full sm:w-1/2 p-8 flex flex-col justify-center">
           <segment.icon className="h-10 w-10 mb-4 text-[#51682C]" />
           <h3 className="text-2xl font-bold mb-3">{segment.title}</h3>
           <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -71,6 +73,7 @@ const SegmentCard = ({ segment, index }: SegmentCardProps) => {
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
+
       </div>
     </FadeIn>
   );
@@ -91,7 +94,6 @@ export const CompanySegments = () => {
           </div>
         </FadeIn>
 
-        {/* Grid 2 per row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
           {segments.map((segment, index) => (
             <SegmentCard key={index} segment={segment} index={index} />
