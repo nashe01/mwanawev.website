@@ -2,6 +2,13 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/Asset 55.png";
 
 export const Footer = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="bg-charcoal text-white py-6">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,11 +29,51 @@ export const Footer = () => {
           <div className="mt-6">
             <h3 className="font-semibold text-lg mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm opacity-80">
-              <li><a href="#about" className="hover:text-accent transition-colors">About Us</a></li>
-              <li><a href="#segments" className="hover:text-accent transition-colors">Segments</a></li>
-              <li><a href="#ecosystem" className="hover:text-accent transition-colors">Ecosystem</a></li>
-              <li><a href="#team" className="hover:text-accent transition-colors">Team</a></li>
-              <li><a href="#impact" className="hover:text-accent transition-colors">Impact</a></li>
+              <li>
+                <a 
+                  href="#about" 
+                  onClick={(e) => { e.preventDefault(); scrollToSection("about"); }}
+                  className="hover:text-accent transition-colors cursor-pointer"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#segments" 
+                  onClick={(e) => { e.preventDefault(); scrollToSection("segments"); }}
+                  className="hover:text-accent transition-colors cursor-pointer"
+                >
+                  Segments
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#ecosystem" 
+                  onClick={(e) => { e.preventDefault(); scrollToSection("ecosystem"); }}
+                  className="hover:text-accent transition-colors cursor-pointer"
+                >
+                  Ecosystem
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#team" 
+                  onClick={(e) => { e.preventDefault(); scrollToSection("team"); }}
+                  className="hover:text-accent transition-colors cursor-pointer"
+                >
+                  Team
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#impact" 
+                  onClick={(e) => { e.preventDefault(); scrollToSection("impact"); }}
+                  className="hover:text-accent transition-colors cursor-pointer"
+                >
+                  Impact
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -34,10 +81,42 @@ export const Footer = () => {
           <div className="mt-6">
             <h3 className="font-semibold text-lg mb-3">Services</h3>
             <ul className="space-y-2 text-sm opacity-80">
-              <li><a href="#" className="hover:text-accent transition-colors">Technology Solutions</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Conservation Services</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Education & Training</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Community Development</a></li>
+              <li>
+                <a 
+                  href="#segments" 
+                  onClick={(e) => { e.preventDefault(); scrollToSection("segments"); }}
+                  className="hover:text-accent transition-colors cursor-pointer"
+                >
+                  Technology Solutions
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#segments" 
+                  onClick={(e) => { e.preventDefault(); scrollToSection("segments"); }}
+                  className="hover:text-accent transition-colors cursor-pointer"
+                >
+                  Conservation Services
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#segments" 
+                  onClick={(e) => { e.preventDefault(); scrollToSection("segments"); }}
+                  className="hover:text-accent transition-colors cursor-pointer"
+                >
+                  Education & Training
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#segments" 
+                  onClick={(e) => { e.preventDefault(); scrollToSection("segments"); }}
+                  className="hover:text-accent transition-colors cursor-pointer"
+                >
+                  Community Development
+                </a>
+              </li>
             </ul>
           </div>
 
