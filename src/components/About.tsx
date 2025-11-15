@@ -12,9 +12,9 @@ export const About = () => {
               About Mwanawev
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            creating sustainable solutions that drive economic growth
-                    and improve quality of life across the continent. We envision a future where technology serves
-                    as a bridge to opportunity for every community.
+              creating sustainable solutions that drive economic growth
+              and improve quality of life across the continent. We envision a future where technology serves
+              as a bridge to opportunity for every community.
             </p>
           </div>
         </FadeIn>
@@ -24,7 +24,7 @@ export const About = () => {
           <div className="space-y-6">
 
             <FadeIn direction="left" delay={200}>
-              <div className="flex items-start space-x-4 border border-[#51682C] p-4 rounded-xl">
+              <div className="flex items-start space-x-4 border-2 border-[#51682C] p-4 rounded-xl">
                 <div className="bg-accent/10 p-3 rounded-lg">
                   <Eye className="h-8 w-8 text-accent" />
                 </div>
@@ -40,7 +40,7 @@ export const About = () => {
             </FadeIn>
 
             <FadeIn direction="left" delay={400}>
-              <div className="flex items-start space-x-4 border border-[#51682C] p-4 rounded-xl">
+              <div className="flex items-start space-x-4 border-2 border-[#51682C] p-4 rounded-xl">
                 <div className="bg-accent/10 p-3 rounded-lg">
                   <Target className="h-8 w-8 text-accent" />
                 </div>
@@ -59,24 +59,25 @@ export const About = () => {
 
           {/* Image */}
           <FadeIn direction="right" delay={300}>
-          <div className="relative">
-  {/* Image Card */}
-  <div className="aspect-square rounded-2xl overflow-hidden shadow-lg border border-[#51682C]">
-    <img
-      src={visionImg}
-      alt="Vision and Mission"
-      className="w-full h-full object-cover"
-    />
-  </div>
+            <div className="relative">
 
-  {/* Text Card */}
-  <div className="absolute -bottom-6 -right-6 bg-accent p-6 rounded-lg shadow-xl max-w-xs border border-[#51682C]">
-    <p className="font-semibold text-lg text-[#333333]">
-      An innovation hub, that address real-world challenges through technology and creative solutions.
-    </p>
-  </div>
-</div>
+              {/* Image Card */}
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-lg border-2 border-[#51682C]">
+                <img
+                  src={visionImg}
+                  alt="Vision and Mission"
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
+              {/* Text Card */}
+              <div className="absolute -bottom-6 -right-6 bg-charcoal p-6 rounded-lg shadow-xl max-w-xs border-2 border-[#51682C]">
+                <p className="font-semibold text-lg text-[#DB6B2E]">
+                  An innovation hub, that address real-world challenges through technology and creative solutions.
+                </p>
+              </div>
+
+            </div>
           </FadeIn>
 
         </div>
@@ -84,5 +85,4 @@ export const About = () => {
     </section>
   );
 };
-
 
