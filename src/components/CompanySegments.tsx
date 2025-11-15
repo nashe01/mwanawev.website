@@ -1,8 +1,8 @@
 import { ArrowRight, Cpu, Leaf, GraduationCap, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/FadeIn";
-import techImg from "@/assets/mwanawev.jpg";
-import conservationImg from "@/assets/paywega.jpg";
+import techImg from "@/assets/Mwanawev.jpg";
+import conservationImg from "@/assets/Paywega.jpg";
 import educationImg from "@/assets/skygiants.jpg";
 import communityImg from "@/assets/saas.jpg";
 
