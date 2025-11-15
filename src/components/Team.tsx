@@ -50,10 +50,8 @@ export const Team = () => {
               Meet Our Team
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Mwanawev is powered by a diverse team of innovators, entrepreneurs, and industry experts who share
-              a common passion for creating meaningful change. Our leadership brings together decades of experience 
-              across technology, finance, and business development, while our growing team represents the best 
-              of African talent and global expertise.
+              Mwanawev is powered by a diverse team of innovators, entrepreneurs, 
+              and industry experts who share a passion for meaningful change.
             </p>
           </div>
         </FadeIn>
@@ -63,7 +61,7 @@ export const Team = () => {
           {teamMembers.map((member, index) => (
             <FadeIn key={index} direction="scale" delay={index * 100}>
               <div className="group text-center max-w-[260px] mx-auto">
-                <div className="relative mb-4 overflow-hidden rounded-lg shadow-md">
+                <div className="relative mb-4 overflow-hidden rounded-lg shadow-md border-2 border-[#51682C]">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -75,6 +73,7 @@ export const Team = () => {
                     </button>
                   </div>
                 </div>
+
                 <h3 className="text-lg font-semibold text-[#DB6B2E] mb-1">
                   {member.name}
                 </h3>
