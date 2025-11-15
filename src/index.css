@@ -199,3 +199,13 @@ All colors MUST be HSL.
     transition-duration: 0.01ms !important;
   }
 }
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.7s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
