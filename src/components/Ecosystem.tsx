@@ -21,7 +21,7 @@ export const Ecosystem = () => {
           
           {/* Diagram */}
           <FadeIn direction="scale" delay={200}>
-            <div className="relative mb-12">
+            <div className="relative mb-12 border-2 border-[#51682C] rounded-2xl">
               <img
                 src={ecosystemImg}
                 alt="Mwanawev Ecosystem Diagram"
